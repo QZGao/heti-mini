@@ -4,21 +4,26 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
-  build-publish:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: NPM Build
+        run: |
+          npm install
+            npm run test
+          npm run build
+      - name: Publish
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{secrets.NPM_TOKEN}}

@@ -1,6 +1,6 @@
 {
   "name": "heti-mini",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "赫蹏 mini，輕量級的標點擠壓、盤古空格排版方案",
   "main": "src/heti.js",
   "files": [
