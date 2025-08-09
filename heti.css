@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* Modified from Heti (https://github.com/sivan/heti)
+ * Original authors: Sivan (sun.sivan@gmail.com) & Heti contributors
+ * License: MIT
+ */
+
+@font-face {
+    font-family: "Heti Hei SC";
+    src: local("Lantinghei SC"), local("Lantinghei TC"), local("PingFang SC"), local("PingFang TC"), local("PingFang HK"), local("Heiti SC"), local("Heiti TC"), local("Noto Sans SC"), local("Noto Sans TC"), local("Noto Sans HK"), local("Noto Sans JP"), local("Noto Sans KR"), local("Noto Sans CJK SC"), local("Noto Sans CJK TC"), local("Noto Sans CJK HK"), local("Noto Sans CJK JP"), local("Noto Sans CJK KR"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans"), local("Source Han Sans JP"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Hiragino Sans GB"), local("Hiragino Sans TC"), local("Hiragino Sans CNS"), local("WenQuanYi Micro Hei"), local("Microsoft YaHei"), local("Microsoft Jhenghei"), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei SC";
+    font-weight: bold;
+    src: local("Lantinghei SC"), local("Lantinghei TC"), local("PingFang SC"), local("PingFang TC"), local("PingFang HK"), local("Heiti SC"), local("Heiti TC"), local("Noto Sans SC Bold"), local("Noto Sans TC Bold"), local("Noto Sans HK Bold"), local("Noto Sans JP Bold"), local("Noto Sans KR Bold"), local("Noto Sans CJK SC Bold"), local("Noto Sans CJK TC Bold"), local("Noto Sans CJK HK Bold"), local("Noto Sans CJK JP Bold"), local("Noto Sans CJK KR Bold"), local("Source Han Sans SC Bold"), local("Source Han Sans CN Bold"), local("Source Han Sans TC Bold"), local("Source Han Sans TW Bold"), local("Source Han Sans TWHK Bold"), local("Source Han Sans HC Bold"), local("Source Han Sans HK Bold"), local("Source Han Sans Bold"), local("Source Han Sans JP Bold"), local("Source Han Sans K Bold"), local("Source Han Sans KR Bold"), local("Noto Sans SC"), local("Noto Sans TC"), local("Noto Sans HK"), local("Noto Sans JP"), local("Noto Sans KR"), local("Noto Sans CJK SC"), local("Noto Sans CJK TC"), local("Noto Sans CJK HK"), local("Noto Sans CJK JP"), local("Noto Sans CJK KR"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans"), local("Source Han Sans JP"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Hiragino Sans GB"), local("Hiragino Sans TC"), local("Hiragino Sans CNS"), local("WenQuanYi Micro Hei"), local("Microsoft YaHei"), local("Microsoft Jhenghei"), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei TC";
+    src: local("Lantinghei TC"), local("Lantinghei SC"), local("PingFang TC"), local("PingFang HK"), local("PingFang SC"), local("Heiti TC"), local("Heiti SC"), local("Noto Sans TC"), local("Noto Sans HK"), local("Noto Sans SC"), local("Noto Sans KR"), local("Noto Sans JP"), local("Noto Sans CJK TC"), local("Noto Sans CJK HK"), local("Noto Sans CJK SC"), local("Noto Sans CJK KR"), local("Noto Sans CJK JP"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Source Han Sans"), local("Source Han Sans JP"), local("Hiragino Sans TC"), local("Hiragino Sans CNS"), local("Hiragino Sans GB"), local("Microsoft Jhenghei"), local("Microsoft YaHei"), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei TC";
+    font-weight: bold;
+    src: local("Lantinghei TC"), local("Lantinghei SC"), local("PingFang TC"), local("PingFang HK"), local("PingFang SC"), local("Heiti TC"), local("Heiti SC"), local("Noto Sans TC Bold"), local("Noto Sans HK Bold"), local("Noto Sans SC Bold"), local("Noto Sans KR Bold"), local("Noto Sans JP Bold"), local("Noto Sans CJK TC Bold"), local("Noto Sans CJK HK Bold"), local("Noto Sans CJK SC Bold"), local("Noto Sans CJK KR Bold"), local("Noto Sans CJK JP Bold"), local("Source Han Sans TC Bold"), local("Source Han Sans TW Bold"), local("Source Han Sans TWHK Bold"), local("Source Han Sans HC Bold"), local("Source Han Sans HK Bold"), local("Source Han Sans SC Bold"), local("Source Han Sans CN Bold"), local("Source Han Sans K Bold"), local("Source Han Sans KR Bold"), local("Source Han Sans Bold"), local("Source Han Sans JP Bold"), local('Noto Sans TC'), local('Noto Sans HK'), local('Noto Sans SC'), local('Noto Sans KR'), local('Noto Sans JP'), local('Noto Sans CJK TC'), local('Noto Sans CJK HK'), local('Noto Sans CJK SC'), local('Noto Sans CJK KR'), local('Noto Sans CJK JP'), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Source Han Sans"), local("Source Han Sans JP"), local("Hiragino Sans TC"), local("Hiragino Sans CNS"), local("Hiragino Sans GB"), local("Microsoft Jhenghei"), local("Microsoft YaHei"), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei HC";
+    src: local("Lantinghei TC"), local("Lantinghei SC"), local("PingFang HK"), local("PingFang TC"), local("PingFang SC"), local("Heiti TC"), local("Heiti SC"), local("Noto Sans HK"), local("Noto Sans TC"), local("Noto Sans SC"), local("Noto Sans KR"), local("Noto Sans JP"), local("Noto Sans CJK HK"), local("Noto Sans CJK TC"), local("Noto Sans CJK SC"), local("Noto Sans CJK KR"), local("Noto Sans CJK JP"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans TWHK"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Source Han Sans"), local("Source Han Sans JP"), local("Hiragino Sans TC"), local("Hiragino Sans CNS"), local("Hiragino Sans GB"), local("Microsoft Jhenghei"), local("Microsoft YaHei"), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei HC";
+    font-weight: bold;
+    src: local("Lantinghei TC"), local("Lantinghei SC"), local("PingFang HK"), local("PingFang TC"), local("PingFang SC"), local("Heiti TC"), local("Heiti SC"), local("Noto Sans HK Bold"), local("Noto Sans TC Bold"), local("Noto Sans SC Bold"), local("Noto Sans KR Bold"), local("Noto Sans JP Bold"), local("Noto Sans CJK HK Bold"), local("Noto Sans CJK TC Bold"), local("Noto Sans CJK SC Bold"), local("Noto Sans CJK KR Bold"), local("Noto Sans CJK JP Bold"), local("Source Han Sans HC Bold"), local("Source Han Sans HK Bold"), local("Source Han Sans TWHK Bold"), local("Source Han Sans TC Bold"), local("Source Han Sans TW Bold"), local("Source Han Sans SC Bold"), local("Source Han Sans CN Bold"), local("Source Han Sans K Bold"), local("Source Han Sans KR Bold"), local("Source Han Sans Bold"), local("Source Han Sans JP Bold"), local('Noto Sans HK'), local('Noto Sans TC'), local('Noto Sans SC'), local('Noto Sans KR'), local('Noto Sans JP'), local('Noto Sans CJK HK'), local('Noto Sans CJK TC'), local('Noto Sans CJK SC'), local('Noto Sans CJK KR'), local('Noto Sans CJK JP'), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans TWHK"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Source Han Sans"), local("Source Han Sans JP"), local("Hiragino Sans TC"), local("Hiragino Sans CNS"), local("Hiragino Sans GB"), local("Microsoft Jhenghei"), local("Microsoft YaHei"), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei JP";
+    src: local("Noto Sans JP"), local("Noto Sans SC"), local("Noto Sans TC"), local("Noto Sans HK"), local("Noto Sans KR"), local("Noto Sans CJK JP"), local("Noto Sans CJK SC"), local("Noto Sans CJK TC"), local("Noto Sans CJK HK"), local("Noto Sans CJK KR"), local("Source Han Sans"), local("Source Han Sans JP"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans K"), local("Source Han Sans KR"), local("ヒラギノ角ゴ Pro W3"), local("Hiragino Kaku Gothic Pro"), local("Osaka"), local("メイリオ"), local("Meiryo"), local("ＭＳ Ｐゴシック"), local("MS PGothic"), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei JP";
+    font-weight: bold;
+    src: local("Noto Sans JP Bold"), local("Noto Sans SC Bold"), local("Noto Sans TC Bold"), local("Noto Sans HK Bold"), local("Noto Sans KR Bold"), local("Noto Sans CJK JP Bold"), local("Noto Sans CJK SC Bold"), local("Noto Sans CJK TC Bold"), local("Noto Sans CJK HK Bold"), local("Noto Sans CJK KR Bold"), local("Source Han Sans JP Bold"), local("Source Han Sans SC Bold"), local("Source Han Sans CN Bold"), local("Source Han Sans TC Bold"), local("Source Han Sans TW Bold"), local("Source Han Sans TWHK Bold"), local("Source Han Sans HC Bold"), local("Source Han Sans HK Bold"), local("Source Han Sans K Bold"), local("Source Han Sans KR Bold"), local('Noto Sans JP'), local('Noto Sans SC'), local('Noto Sans TC'), local('Noto Sans HK'), local('Noto Sans KR'), local('Noto Sans CJK JP'), local('Noto Sans CJK SC'), local('Noto Sans CJK TC'), local('Noto Sans CJK HK'), local('Noto Sans CJK KR'), local("Source Han Sans JP"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Source Han Sans"), local('ヒラギノ角ゴ Pro W3'), local('Hiragino Kaku Gothic Pro'), local('Osaka'), local('メイリオ'), local('Meiryo'), local('ＭＳ Ｐゴシック'), local('MS PGothic'), local('Droid Sans Fallback');
+}
+
+@font-face {
+    font-family: "Heti Hei KR";
+    src: local("Noto Sans KR"), local("Noto Sans TC"), local("Noto Sans HK"), local("Noto Sans SC"), local("Noto Sans JP"), local("Noto Sans CJK KR"), local("Noto Sans CJK TC"), local("Noto Sans CJK HK"), local("Noto Sans CJK SC"), local("Noto Sans CJK JP"), local("Source Han Sans K"), local("Source Han Sans KR"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans"), local("Source Han Sans JP"), local('Apple SD Gothic Neo'), local('NanumBarunGothic'), local('맑은 고딕'), local('Malgun Gothic'), local('굴림'), local('Gulim'), local('돋움'), local('Dotum'), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Hei KR";
+    font-weight: bold;
+    src: local("Noto Sans KR Bold"), local("Noto Sans TC Bold"), local("Noto Sans HK Bold"), local("Noto Sans SC Bold"), local("Noto Sans JP Bold"), local("Noto Sans CJK KR Bold"), local("Noto Sans CJK TC Bold"), local("Noto Sans CJK HK Bold"), local("Noto Sans CJK SC Bold"), local("Noto Sans CJK JP Bold"), local("Source Han Sans K Bold"), local("Source Han Sans KR Bold"), local("Source Han Sans TC Bold"), local("Source Han Sans TW Bold"), local("Source Han Sans TWHK Bold"), local("Source Han Sans HC Bold"), local("Source Han Sans HK Bold"), local("Source Han Sans SC Bold"), local("Source Han Sans CN Bold"), local("Source Han Sans Bold"), local("Source Han Sans JP Bold"), local('Noto Sans KR'), local('Noto Sans TC'), local('Noto Sans HK'), local('Noto Sans SC'), local('Noto Sans JP'), local('Noto Sans CJK KR'), local('Noto Sans CJK TC'), local('Noto Sans CJK HK'), local('Noto Sans CJK SC'), local('Noto Sans CJK JP'), local("Source Han Sans K"), local("Source Han Sans KR"), local("Source Han Sans TC"), local("Source Han Sans TW"), local("Source Han Sans TWHK"), local("Source Han Sans HC"), local("Source Han Sans HK"), local("Source Han Sans SC"), local("Source Han Sans CN"), local("Source Han Sans"), local("Source Han Sans JP"), local('Apple SD Gothic Neo'), local('NanumBarunGothic'), local('맑은 고딕'), local('Malgun Gothic'), local('굴림'), local('Gulim'), local('돋움'), local('Dotum'), local("Droid Sans Fallback");
+}
+
+@font-face {
+    font-family: "Heti Song SC";
+    src: local("Songti SC"), local("Songti TC"), local("Noto Serif SC"), local("Noto Serif TC"), local("Noto Serif HK"), local("Noto Serif JP"), local("Noto Serif KR"), local("Noto Serif CJK SC"), local("Noto Serif CJK TC"), local("Noto Serif CJK HK"), local("Noto Serif CJK JP"), local("Noto Serif CJK KR"), local("Source Han Serif SC"), local("Source Han Serif CN"), local("Source Han Serif TC"), local("Source Han Serif TW"), local("Source Han Serif TWHK"), local("Source Han Serif HC"), local("Source Han Serif HK"), local("Source Han Serif"), local("Source Han Serif JP"), local("Source Han Serif K"), local("Source Han Serif KR"), local("Adobe Song Std L"), local("Adobe Ming Std L"), local("AR PL SungtiL GB"), local("WenQuanYi Song"), local("FZSongTi"), local("STSong"), local("NSimSun"), local("SimSun"), local("SimSun-ExtB"), local("TW-Sung"), local("PMingLiU"), local("PMingLiU-ExtB"), local("MingLiU"), local("MingLiU_HKSCS"), local("MingLiU-ExtB"), local('Yu Mincho'), local('YuMincho'), local('MS PMincho'), local('MS Mincho');
+}
+
+@font-face {
+    font-family: "Heti Song SC";
+    font-weight: bold;
+    src: local("Songti SC"), local("Songti TC"), local("Noto Serif SC Bold"), local("Noto Serif TC Bold"), local("Noto Serif HK Bold"), local("Noto Serif JP Bold"), local("Noto Serif KR Bold"), local("Noto Serif CJK SC Bold"), local("Noto Serif CJK TC Bold"), local("Noto Serif CJK HK Bold"), local("Noto Serif CJK JP Bold"), local("Noto Serif CJK KR Bold"), local("Source Han Serif SC Bold"), local("Source Han Serif CN Bold"), local("Source Han Serif TC Bold"), local("Source Han Serif TW Bold"), local("Source Han Serif TWHK Bold"), local("Source Han Serif HC Bold"), local("Source Han Serif HK Bold"), local("Source Han Serif Bold"), local("Source Han Serif JP Bold"), local("Source Han Serif K Bold"), local("Source Han Serif KR Bold"), local('Noto Serif SC'), local('Noto Serif TC'), local('Noto Serif HK'), local('Noto Serif JP'), local('Noto Serif KR'), local('Noto Serif CJK SC'), local('Noto Serif CJK TC'), local('Noto Serif CJK HK'), local('Noto Serif CJK JP'), local('Noto Serif CJK KR'), local('Source Han Serif SC'), local('Source Han Serif CN'), local('Source Han Serif TC'), local('Source Han Serif TW'), local('Source Han Serif TWHK'), local('Source Han Serif HC'), local('Source Han Serif HK'), local('Source Han Serif'), local('Source Han Serif JP'), local('Source Han Serif K'), local('Source Han Serif KR'), local("Adobe Song Std L"), local("Adobe Ming Std L"), local("AR PL SungtiL GB"), local("WenQuanYi Song"), local("FZSongTi"), local("STSong"), local("NSimSun"), local("SimSun"), local("SimSun-ExtB"), local("TW-Sung"), local("PMingLiU"), local("PMingLiU-ExtB"), local("MingLiU"), local("MingLiU_HKSCS"), local("MingLiU-ExtB"), local('Yu Mincho'), local('YuMincho'), local('MS PMincho'), local('MS Mincho');
+}
+
+@font-face {
+    font-family: "Heti Song TC";
+    src: local("Songti TC"), local("Songti SC"), local("Noto Serif TC"), local("Noto Serif HK"), local("Noto Serif SC"), local("Noto Serif KR"), local("Noto Serif JP"), local("Noto Serif CJK TC"), local("Noto Serif CJK HK"), local("Noto Serif CJK SC"), local("Noto Serif CJK KR"), local("Noto Serif CJK JP"), local("Source Han Serif TC"), local("Source Han Serif TW"), local("Source Han Serif TWHK"), local("Source Han Serif HC"), local("Source Han Serif HK"), local("Source Han Serif SC"), local("Source Han Serif CN"), local("Source Han Serif K"), local("Source Han Serif KR"), local("Source Han Serif"), local("Source Han Serif JP"), local("Adobe Ming Std L"), local("Adobe Song Std L"), local("AR PL SungtiL GB"), local("WenQuanYi Song"), local("FZSongTi"), local("STSong"), local("Lisong Pro"), local("TW-Sung"), local("PMingLiU"), local("PMingLiU-ExtB"), local("MingLiU"), local("MingLiU_HKSCS"), local("MingLiU-ExtB"), local("NSimSun"), local("SimSun"), local("SimSun-ExtB"), local('Yu Mincho'), local('YuMincho'), local('MS PMincho'), local('MS Mincho');
+}
+
+@font-face {
+    font-family: "Heti Song TC";
+    font-weight: bold;
+    src: local("Songti TC"), local("Songti SC"), local("Noto Serif TC Bold"), local("Noto Serif HK Bold"), local("Noto Serif SC Bold"), local("Noto Serif KR Bold"), local("Noto Serif JP Bold"), local("Noto Serif CJK TC Bold"), local("Noto Serif CJK HK Bold"), local("Noto Serif CJK SC Bold"), local("Noto Serif CJK KR Bold"), local("Noto Serif CJK JP Bold"), local("Source Han Serif TC Bold"), local("Source Han Serif TW Bold"), local("Source Han Serif TWHK Bold"), local("Source Han Serif HC Bold"), local("Source Han Serif HK Bold"), local("Source Han Serif SC Bold"), local("Source Han Serif CN Bold"), local("Source Han Serif K Bold"), local("Source Han Serif KR Bold"), local('Noto Serif TC'), local('Noto Serif HK'), local('Noto Serif SC'), local('Noto Serif KR'), local('Noto Serif JP'), local('Noto Serif CJK TC'), local('Noto Serif CJK HK'), local('Noto Serif CJK SC'), local('Noto Serif CJK KR'), local('Noto Serif CJK JP'), local("Source Han Serif TC"), local("Source Han Serif TW"), local("Source Han Serif TWHK"), local("Source Han Serif HC"), local("Source Han Serif HK"), local("Source Han Serif SC"), local("Source Han Serif CN"), local("Source Han Serif K"), local("Source Han Serif KR"), local("Source Han Serif"), local("Source Han Serif JP"), local('Adobe Ming Std L'), local('Adobe Song Std L'), local('AR PL SungtiL GB'), local('WenQuanYi Song'), local('FZSongTi'), local('STSong'), local('Lisong Pro'), local("TW-Sung"), local('PMingLiU'), local('PMingLiU-ExtB'), local('MingLiU'), local('MingLiU_HKSCS'), local('MingLiU-ExtB'), local('NSimSun'), local('SimSun'), local('SimSun-ExtB'), local('Yu Mincho'), local('YuMincho'), local('MS PMincho'), local('MS Mincho');
+}
+
+@font-face {
+    font-family: "Heti Song JP";
+    src: local("Noto Serif JP"), local("Noto Serif SC"), local("Noto Serif TC"), local("Noto Serif HK"), local("Noto Serif KR"), local("Noto Serif CJK JP"), local("Noto Serif CJK SC"), local("Noto Serif CJK TC"), local("Noto Serif CJK HK"), local("Noto Serif CJK KR"), local("Source Han Serif JP"), local("Source Han Serif SC"), local("Source Han Serif CN"), local("Source Han Serif TC"), local("Source Han Serif TW"), local("Source Han Serif TWHK"), local("Source Han Serif HC"), local("Source Han Serif HK"), local("Source Han Serif K"), local("Source Han Serif KR"), local("Source Han Serif"), local("Source Han Serif JP"), local('Hiragino Mincho Pro W3'), local('Hiragino Mincho ProN'), local('Hiragino Mincho Pro'), local("Adobe Ming Std L"), local("Adobe Song Std L"), local("AR PL SungtiL GB"), local("WenQuanYi Song"), local("FZSongTi"), local("STSong"), local("Lisong Pro"), local('Yu Mincho'), local('YuMincho'), local('MS PMincho'), local('MS Mincho'), local("TW-Sung"), local("PMingLiU"), local("PMingLiU-ExtB"), local("MingLiU"), local("MingLiU_HKSCS"), local("MingLiU-ExtB"), local("NSimSun"), local("SimSun"), local("SimSun-ExtB");
+}
+
+@font-face {
+    font-family: "Heti Song JP";
+    font-weight: bold;
+    src: local("Noto Serif JP Bold"), local("Noto Serif SC Bold"), local("Noto Serif TC Bold"), local("Noto Serif HK Bold"), local("Noto Serif KR Bold"), local("Noto Serif CJK JP Bold"), local("Noto Serif CJK SC Bold"), local("Noto Serif CJK TC Bold"), local("Noto Serif CJK HK Bold"), local("Noto Serif CJK KR Bold"), local("Source Han Serif JP Bold"), local("Source Han Serif SC Bold"), local("Source Han Serif CN Bold"), local("Source Han Serif TC Bold"), local("Source Han Serif TW Bold"), local("Source Han Serif TWHK Bold"), local("Source Han Serif HC Bold"), local("Source Han Serif HK Bold"), local("Source Han Serif K Bold"), local("Source Han Serif KR Bold"), local('Noto Serif JP'), local('Noto Serif SC'), local('Noto Serif TC'), local('Noto Serif HK'), local('Noto Serif KR'), local('Noto Serif CJK JP'), local('Noto Serif CJK SC'), local('Noto Serif CJK TC'), local('Noto Serif CJK HK'), local('Noto Serif CJK KR'), local('Source Han Serif JP'), local('Source Han Serif SC'), local('Source Han Serif CN'), local('Source Han Serif TC'), local('Source Han Serif TW'), local('Source Han Serif TWHK'), local('Source Han Serif HC'), local('Source Han Serif HK'), local('Source Han Serif K'), local('Source Han Serif KR'), local('Source Han Serif'), local('Hiragino Mincho Pro W3'), local('Hiragino Mincho ProN'), local('Hiragino Mincho Pro'), local('Adobe Ming Std L'), local('Adobe Song Std L'), local('AR PL SungtiL GB'), local('WenQuanYi Song'), local('FZSongTi'), local('STSong'), local('Lisong Pro'), local('Yu Mincho'), local('YuMincho'), local('MS PMincho'), local('MS Mincho'), local("TW-Sung"), local("PMingLiU"), local("PMingLiU-ExtB"), local("MingLiU"), local("MingLiU_HKSCS"), local("MingLiU-ExtB"), local("NSimSun"), local("SimSun"), local("SimSun-ExtB");
+}
+
+.heti {
+    -webkit-font-smoothing: subpixel-antialiased;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    letter-spacing: 0.02em;
+}
+
+.heti::before, .heti::after {
+    content: "";
+    display: table;
+}
+
+.heti::after {
+    clear: both;
+}
+
+.heti p {
+    text-align: justify;
+}
+
+.heti p:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)), .heti p:not(:lang(zh)) {
+    text-align: start;
+}
+
+.heti pre {
+    overflow: auto;
+    word-wrap: normal;
+}
+
+.heti:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)), .heti:not(:lang(zh)) {
+    letter-spacing: 0;
+}
+
+.heti a,
+.heti abbr,
+.heti code,
+.heti heti-spacing,
+.heti [lang=en-US] {
+    letter-spacing: normal;
+}
+
+.heti h1,
+.heti h2,
+.heti h3 {
+    letter-spacing: 0.05em;
+}
+
+.heti h1:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)), .heti h1:not(:lang(zh)),
+.heti h2:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)),
+.heti h2:not(:lang(zh)),
+.heti h3:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)),
+.heti h3:not(:lang(zh)) {
+    letter-spacing: 0;
+}
+
+.heti code {
+    font-size: 0.875em;
+}
+
+.heti :lang(zh),
+.heti :lang(zh-Hans) {
+    font-family: "Heti Hei SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.heti :lang(zh-Hant) {
+    font-family: "Heti Hei TC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.heti :lang(zh-Hant-HK) {
+    font-family: "Heti Hei HC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.heti :lang(ja) {
+    font-family: "Heti Hei JP", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.heti :lang(ko) {
+    font-family: "Heti Hei KR", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.heti :not(:lang(zh)):not(:lang(ja)):not(:lang(ko)) {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.heti .fa {
+    font-family: FontAwesome !important; /* Ensure FontAwesome icons are displayed correctly */
+}
+
+.heti :lang(zh) code, .heti :lang(zh) code *,
+.heti :lang(ja) code, .heti :lang(ja) code *,
+.heti :lang(ko) code, .heti :lang(ko) code *,
+.heti :not(:lang(zh)):not(:lang(ja)):not(:lang(ko)) code, .heti :not(:lang(zh)):not(:lang(ja)):not(:lang(ko)) code *,
+.heti :lang(zh) pre, .heti :lang(zh) pre *,
+.heti :lang(ja) pre, .heti :lang(ja) pre *,
+.heti :lang(ko) pre, .heti :lang(ko) pre *,
+.heti :not(:lang(zh)):not(:lang(ja)):not(:lang(ko)) pre, .heti :not(:lang(zh)):not(:lang(ja)):not(:lang(ko)) pre * {
+    font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    letter-spacing: 0;
+    text-align: start;
+}
+
+.heti--columns-1, .heti--columns-2, .heti--columns-3, .heti--columns-4, .heti--columns-16em, .heti--columns-20em, .heti--columns-24em, .heti--columns-28em, .heti--columns-32em, .heti--columns-36em, .heti--columns-40em, .heti--columns-44em, .heti--columns-48em, .heti comma {
+    max-width: none;
+    column-gap: 2em;
+}
+
+.heti--columns-1 p, .heti--columns-2 p, .heti--columns-3 p, .heti--columns-4 p, .heti--columns-16em p, .heti--columns-20em p, .heti--columns-24em p, .heti--columns-28em p, .heti--columns-32em p, .heti--columns-36em p, .heti--columns-40em p, .heti--columns-44em p, .heti--columns-48em p, .heti comma p {
+    margin-block-start: 6px;
+    margin-block-end: 12px;
+    text-indent: 2em;
+}
+
+.heti--columns-1 {
+    column-count: 1;
+}
+
+.heti--columns-2 {
+    column-count: 2;
+}
+
+.heti--columns-3 {
+    column-count: 3;
+}
+
+.heti--columns-4 {
+    column-count: 4;
+}
+
+.heti--columns-16em {
+    column-width: 16em;
+}
+
+.heti--columns-20em {
+    column-width: 20em;
+}
+
+.heti--columns-24em {
+    column-width: 24em;
+}
+
+.heti--columns-28em {
+    column-width: 28em;
+}
+
+.heti--columns-32em {
+    column-width: 32em;
+}
+
+.heti--columns-36em {
+    column-width: 36em;
+}
+
+.heti--columns-40em {
+    column-width: 40em;
+}
+
+.heti--columns-44em {
+    column-width: 44em;
+}
+
+.heti--columns-48em {
+    column-width: 48em;
+}
+
+.heti .heti-em {
+    -webkit-text-emphasis: filled circle;
+    -webkit-text-emphasis-position: under;
+    text-emphasis: filled circle;
+    text-emphasis-position: under right;
+}
+
+.heti .heti-em:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)), .heti .heti-em:not(:lang(zh)) {
+    -webkit-text-emphasis: none;
+    text-emphasis: none;
+}
+
+.heti .heti-ruby--inline {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    height: 1.5em;
+    vertical-align: top;
+}
+
+.heti .heti-ruby--inline rt {
+    display: inline;
+    margin-bottom: -0.25em;
+    line-height: 1;
+    text-align: center;
+}
+
+.heti heti-spacing {
+    display: inline;
+}
+
+.heti heti-spacing + sup, .heti heti-spacing + sub {
+    margin-inline-start: 0;
+}
+
+.heti .heti-spacing-start {
+    margin-inline-end: 0.25em;
+}
+
+.heti .heti-spacing-end {
+    margin-inline-start: 0.25em;
+}
+
+.heti .heti-spacing-symbol {
+    word-break: break-all;
+}
+
+.heti .heti-spacing-space {
+    content: ' ';
+}
+
+.heti .nowrap,
+.heti [style*="nowrap"] {
+    min-width: max-content;
+}
+
+.heti span.nowrap,
+.heti span[style*="nowrap"] {
+    display: inline-block;
+}
+
+.heti heti-adjacent {
+    display: inline;
+    text-spacing-trim: space-all;
+}
+
+.heti .heti-adjacent-stop-open,
+.heti .heti-adjacent-stop-open:lang(zh-Hans),
+.heti .heti-adjacent-close-open,
+.heti .heti-adjacent-close-stop:lang(zh-Hant) {
+    margin-inline-end: -0.75em;
+}
+
+.heti .heti-adjacent-stop-stop,
+.heti .heti-adjacent-stop-close,
+.heti .heti-adjacent-stop-close:lang(zh-Hans),
+.heti .heti-adjacent-close-stop,
+.heti .heti-adjacent-close-stop:lang(zh-Hans),
+.heti .heti-adjacent-close-close,
+.heti .heti-adjacent-stop-open:lang(zh-Hant) {
+    margin-inline-end: -0.5em;
+}
+
+.heti .heti-adjacent-sep,
+.heti .heti-adjacent-stop-close:lang(zh-Hant) {
+    margin-inline-end: -0.25em;
+}
+
+.heti .heti-adjacent-open-open,
+.heti .heti-adjacent-open-stop,
+.heti .heti-adjacent-open-stop:lang(zh-Hans) {
+    margin-inline-start: -0.5em;
+}
+
+.heti .heti-adjacent-open-stop:lang(zh-Hant) {
+    margin-inline-start: -0.25em;
+}
