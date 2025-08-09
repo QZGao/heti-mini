@@ -4,4 +4,4 @@
 
 請參見原 repo 的更多說明：[sivan/heti](https://github.com/sivan/heti)（[貢獻者](https://github.com/sivan/heti/graphs/contributors)）。
 
-此 mini 版移除了大多數 CSS 規則，且對繁體中文標點擠壓做了調整。
+此 mini 版移除了大多數 CSS 規則，且對繁體中文標點擠壓做了調整，便於部落格網站使用。

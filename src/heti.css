@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Modified from Heti (https://github.com/sivan/heti)
  * Original authors: Sivan (sun.sivan@gmail.com) & Heti contributors
  * License: MIT
@@ -131,7 +132,7 @@
 .heti abbr,
 .heti code,
 .heti heti-spacing,
-.heti [lang=en-US] {
+.heti [lang="en-US"] {
     letter-spacing: normal;
 }
 
@@ -179,7 +180,7 @@
 }
 
 .heti .fa {
-    font-family: FontAwesome !important; /* Ensure FontAwesome icons are displayed correctly */
+    font-family: FontAwesome, sans-serif !important; /* Ensure FontAwesome icons are displayed correctly */
 }
 
 .heti :lang(zh) code, .heti :lang(zh) code *,
@@ -190,7 +191,7 @@
 .heti :lang(ja) pre, .heti :lang(ja) pre *,
 .heti :lang(ko) pre, .heti :lang(ko) pre *,
 .heti :not(:lang(zh)):not(:lang(ja)):not(:lang(ko)) pre, .heti :not(:lang(zh)):not(:lang(ja)):not(:lang(ko)) pre * {
-    font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-family: "Fira Code", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
     letter-spacing: 0;
     text-align: start;
 }
@@ -201,8 +202,7 @@
 }
 
 .heti--columns-1 p, .heti--columns-2 p, .heti--columns-3 p, .heti--columns-4 p, .heti--columns-16em p, .heti--columns-20em p, .heti--columns-24em p, .heti--columns-28em p, .heti--columns-32em p, .heti--columns-36em p, .heti--columns-40em p, .heti--columns-44em p, .heti--columns-48em p, .heti comma p {
-    margin-block-start: 6px;
-    margin-block-end: 12px;
+    margin-block: 6px 12px;
     text-indent: 2em;
 }
 
