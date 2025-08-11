@@ -26,9 +26,11 @@
 <link rel="stylesheet" href="//unpkg.com/heti-mini/dist/heti.min.css">
 <script src="//unpkg.com/heti-mini/dist/heti.min.js"></script>
 <script>
-  const heti = new Heti('.heti');
-  heti.autoSpacing();
+  document.addEventListener('DOMContentLoaded', () => {
+    const heti = new Heti('.heti');
+    heti.autoSpacing();
+  });
 </script>
 ```
 
-若頁面為動態載入，則可在載入後再次執行 `heti.autoSpacing()`。
+若頁面為動態載入，則可在須排版內容完全載入後再執行 `heti.autoSpacing()`。
